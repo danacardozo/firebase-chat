@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Profile from './pages/Profile'
@@ -12,7 +12,7 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <Navbar />
+        <NavBar />
         <Switch>
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
